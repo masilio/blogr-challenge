@@ -67,7 +67,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 40px;
+        
     }
     .header__text h3{
         font-size: 30px;
@@ -75,9 +75,9 @@ header{
     .header__text p{
         font-size: 15px;
         font-weight: 9;
-        padding-top: 10px;
+        padding-top: 5px;
         z-index: 2;
-        color: lightgray;
+        color: #FFF;
     }
         
 
@@ -245,12 +245,19 @@ nav a{
     color: #FFF;
     text-decoration: none;
 }
+nav .signup{
+    color: #D63447;
+    padding: 0.6rem;
+    font-weight: bold;
+    
+}
 nav .submenu{
     display: none;
 }
 .has-submenu:hover .submenu{
     display: block;
     background-color: #616F39;
+    position: absolute;
 }
 .toggle{
     display:none;
@@ -274,6 +281,8 @@ nav .submenu{
         width: 100%;
         text-align: center;
         z-index: 100;
+
+       
     }
     .menu .item{
         display: none;
@@ -296,6 +305,9 @@ nav .submenu{
     font-size: 20px;
     margin-left: 80%;
     display: block;
+}
+.login{
+    margin-left: 0px;
 }
 
 
