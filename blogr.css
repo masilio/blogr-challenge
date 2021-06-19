@@ -1,0 +1,392 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: poppins,sans-serif;
+    font-size:0.7em
+}
+
+header{
+    height: 400px;
+    color: #FFF;
+    border-radius: 0px 0px 0px 100px;
+    background:url(img/bg-pattern-intro.svg) right bottom no-repeat,linear-gradient(to right,#FF896B,#FA7F7F)left top repeat;
+
+   background-size:900px,auto;
+   background-position: 50% 40%;
+ object-fit: contain;
+}
+
+.bg-parttern{
+  width: 100%;
+  margin-top: 0px;
+}
+.logo{
+    flex: 20%;
+    text-align: center;
+    margin: 10px;
+}
+    .login{
+        color: #6757;
+        margin-left: 400px;
+    }
+    .signup{
+        border-radius: 30px;
+        text-align: center;
+        background-color: #FFf;
+        font-size: 12px;
+    }
+
+    
+ .buttons__info{
+     padding-top: 20px;
+     
+ }
+ .buttons__info .button{
+   
+    border-radius: 30px;
+    padding: 10px;
+
+}
+.buttons__info .button:hover{
+    background-color: #E45826;
+    color: #FFF;
+}
+.buttons__info .start{
+    background-color: #FFF;
+    color: #D63447;
+    border: 0px;
+    font-weight: bold;
+}
+    .header__text{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .header__text h3{
+        font-size: 30px;
+    }
+    .header__text p{
+        font-size: 15px;
+        font-weight: 9;
+        padding-top: 10px;
+        z-index: 2;
+        color: lightgray;
+    }
+        
+
+    .event__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        
+    }
+    .event__text{
+        display: flex;
+        flex-direction: column;
+        flex: 60%;
+    }
+    .event__image img{
+        width: 70%;
+        margin-left: 200px;
+    }
+
+    .infrastructure__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background: linear-gradient(to right,#222831,#010038) left bottom no-repeat,url(img/bg-pattern-circles.svg) bottom left no-repeat,#060930 right top repeat;
+        background-size: 50px,600px,auto;
+        background-position: 0% 100%;
+        height: 200px;
+border-radius: 0px 0px 0px 100px;
+        
+    }
+    .infrastructure__images{
+        flex: 40%;
+    }
+    .phones-svg{
+        width: 70%;
+        margin-left: 180px;
+    }
+    .infrastructure__text{
+        flex: 60%;
+    }
+
+    .tooling__content{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .tooling__image img{
+        width: 100%;
+    }
+
+
+    .infrastructure,.tooling__content{
+       
+        padding-top: 200px;
+    }
+
+
+    footer{
+        background-color:#1B1A17;
+        color: #Fff;
+        border-radius: 0px 70px 0px 0px;
+    }
+.footer__menu{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer__logo{
+    flex: 20%;
+}
+.footer__link{
+    display: flex;
+    flex: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__nav{
+    margin-right: 100px;
+}
+.logo,.footer__logo{
+    font-size: 40px;
+}
+
+.event__image,.infrastructure__images img{
+    width: 70%;
+}
+.tooling img{
+    width: 100%;
+    padding-right: 100px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+h4,h3,h2{
+   margin-bottom: 16px;
+}
+
+.text{
+    text-align: center;
+    color: rgb(80, 77, 77);
+    padding-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.article1, .article2,.article3{
+    padding-left: 100px;
+}
+
+.article3 h2{
+    color: #FFF;
+    padding-top: 0px;
+}
+.infrastructure__text .text{
+    color: #FFF;
+    opacity: 0.8;
+   
+}
+
+footer li{
+    list-style: none;
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+footer .title{
+    font-weight: bold;
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+/** styling  top menu*/
+/* Basic styling */
+
+nav {
+    background: #222;
+    padding: 0 15px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu,
+.submenu {   
+    list-style-type: none;
+}
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+.item {
+    padding: 10px;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+  
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+.button.secondary { /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+   display: block;
+}
+.has-submenu i {
+    font-size: 12px;
+}
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900; 
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+}
+.submenu-active {
+    background-color: #111;
+    border-radius: 3px;
+}
+
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+    /* Button up from tablet screen */
+    .menu li.button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+    .button a {
+        background: #0080ff;
+        border: 1px royalblue solid;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button.secondary a {
+        background: transparent;
+        border: 1px #0080ff solid;  
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+        background: royalblue;
+        border-color: darkblue;
+    }
+}
+
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+    .button {
+        order: 2;
+    }
+    .submenu-active .submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        background: #111;
+    }
+    .toggle {
+        display: none;
+    }
+    .submenu-active {
+        border-radius: 0;
+    }
+}
+  
