@@ -5,16 +5,16 @@ const menu = document.querySelector(".menu");
 
 /* Toggle mobile menu */
 function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
+    if (menu.classList.contains("active__link")) {
+        menu.classList.remove("active__link");
 
         // adds the menu (hamburger) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
+        toggle.querySelector("a").innerHTML = `<img src="img/icon-hamburger.svg" />`;
     } else {
-        menu.classList.add("active");
+        menu.classList.add("active__link");
 
         // adds the close (x) icon
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
+        toggle.querySelector("a").innerHTML = `<img src="img/icon-close.svg" />`;
     }
 }
 
