@@ -265,6 +265,9 @@ nav .submenu{
 
   
   @media screen and (max-width:768px) {
+      body{
+          overflow-y: hidden;
+      }
    nav{
        padding: 0px;
    }
@@ -311,5 +314,14 @@ nav .submenu{
 }
 
 
+      
+  }
+
+  @media screen and(max-width:400px) {
+
+    .header__text h3,p{
+     
+        font-size: 9px;
+    }
       
   }
