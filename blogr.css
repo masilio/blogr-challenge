@@ -85,7 +85,6 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
         
     }
     .event__text{
@@ -267,6 +266,8 @@ nav .submenu{
   @media screen and (max-width:768px) {
       body{
           overflow-y: hidden;
+          width: 100%;
+          margin: 0px;
       }
    nav{
        padding: 0px;
@@ -313,26 +314,64 @@ nav .submenu{
     margin-left: 0px;
 }
 
+.event,.infrastructure,.tooling,header{
+    width: 100%;
+}
+.event__content{
+    flex-direction: column-reverse;
+    padding-left: 2px;
 
-.header__text h3{
-    font-size: 12px;
-    padding: 30px 0px 0px 10px;
+}
+.event__text{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.event__image img{
+    width: 100%;
+    margin-left: 30px;
+    padding-top: 3px;
+}
+      
+
+
+.infrastructure{
+    flex-direction: column-reverse;
+    padding-left: 2px;
+
+}
+.infrastructure__text{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.infrastructure__images img{
+    width: 100%;
+    margin-left: 30px;
+    padding-top: 3px;
 }
 
-.header__text p{
-    font-size: 12px;
-    margin-top: 0px;
+.tooling__content{
+    flex-direction: column;
+}
+.tooling__text{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.tooling__image img{
+    width: 100%;
+    margin-left: 30px;
+    padding-top: 3px;
 }
 
-
-      
-  }
-
-  @media screen and(max-width:400px) {
-
-    .header__text h3{
-        font-size: 9px;
-        padding: 3px;
-    }
-      
+.article1 .article2 .article3{
+    padding-left: 0px;
+}
   }
