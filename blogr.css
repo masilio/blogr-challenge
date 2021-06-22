@@ -403,4 +403,19 @@ nav .submenu{
 .article1 .article2 .article3{
     padding-left: 0px;
 }
+
+.footer__link{
+
+    flex-direction: column;
+
+}
+
+.footer__nav{
+    font-size: 12px;
+}
+.log{
+    font-size: 7px;
+}
   }
+
+
