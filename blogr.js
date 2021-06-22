@@ -20,3 +20,7 @@ function toggleMenu() {
 
 /* Event Listener */
 toggle.addEventListener("click", toggleMenu, false);
+
+/**Disable right click */
+
+document.addEventListener('contextmenu', event => event.preventDefault());
