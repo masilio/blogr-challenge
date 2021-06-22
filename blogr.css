@@ -9,7 +9,7 @@ body {
     font-family: poppins,sans-serif;
         
         color: hsl(207, 13%, 34%);
-        font-size: 16px;
+        font-size: 11px;
         line-height: 1.6;
         width: 100%;
         background:#fafafa;
@@ -132,9 +132,7 @@ border-radius: 0px 0px 0px 100px;
 
     .tooling__content{
         display:flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
+        justify-content: space-around;
     }
 
     .tooling__image img{
@@ -366,22 +364,30 @@ nav .submenu{
       
 
 
-.infrastructure{
-    flex-direction: column-reverse;
-    padding-left: 2px;
+.infrastructure__content{
 
+flex-direction: column;
+background-size: 0px,200px,auto;
+border-radius: 0px 0px 0px 0px;
 }
 .infrastructure__text{
-    display: flex;
-    flex-direction: column;
-    flex: 100%;
-    margin-left: 0px;
-    padding-left: 0px;
+    background-color: #010038;
+    margin-top: 0px;
+    border-bottom-left-radius: 100px;
+    margin-bottom: 10px;
 }
+
 .infrastructure__images img{
-    width: 100%;
-    margin-left: 30px;
-    padding-top: 3px;
+    width: 60%;
+    margin-left: 20px;
+    
+}
+.article3 h2{
+ font-size: 8px;
+ padding-top: 10px;
+}
+.article3 .text{
+    font-size: 10px;
 }
 
 .tooling__content{
@@ -397,11 +403,7 @@ nav .submenu{
 .tooling__image img{
     width: 100%;
     margin-left: 30px;
-    padding-top: 3px;
-}
-
-.article1 .article2 .article3{
-    padding-left: 0px;
+    padding-top: 100px;
 }
 
 .footer__link{
@@ -416,6 +418,7 @@ nav .submenu{
 .log{
     font-size: 7px;
 }
+
   }
 
 
